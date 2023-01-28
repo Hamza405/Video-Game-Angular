@@ -11,12 +11,16 @@ import { GaugeModule } from 'angular-gauge';
 import {MatTabsModule} from "@angular/material/tabs"
 import {MatIconModule} from "@angular/material/icon"
 import {MatFormFieldModule} from "@angular/material/form-field"
-import {MatSelectModule} from "@angular/material/select"
+import {MatSelectModule} from "@angular/material/select";
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { HomePageComponent } from './components/home-page/home-page.component'
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchBarComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
