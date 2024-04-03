@@ -19,7 +19,9 @@ export class HttpHeadersInterceptors implements HttpInterceptor {
         'X-RapidAPI-Key': '08ce3b46efmsh14758dbd9a927f0p1a2172jsn03f928f0eb5a',
         'X-RapidAPI-Host': 'rawg-video-games-database.p.rapidapi.com',
       },
-      setParams: {},
+      setParams: {
+        key: '1ec5517ee62744ef9df51aac13ba91fb',
+      },
     });
     return next.handle(req);
   }
