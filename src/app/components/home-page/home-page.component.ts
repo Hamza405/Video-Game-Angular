@@ -22,9 +22,12 @@ export class HomePageComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((params: Params) => {
-      console.log(params);
+      if (params['game-search']) {
+        this.searchGames('metacrit', params['game-search']);
+      } else {
+        this.searchGames('metacrit');
+      }
     });
-    this.searchGames('metacrit');
   }
 
   searchGames(sort: string, search?: string) {

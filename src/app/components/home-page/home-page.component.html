@@ -1,12 +1,16 @@
 <div class="filter">
   <mat-form-field>
     <mat-label>Sorts</mat-label>
-    <mat-select panelClass="sort-select" [(ngModel)]="sort">
-      <mat-option value="Name">Name</mat-option>
-      <mat-option value="Released">Released</mat-option>
-      <mat-option value="Added">Added</mat-option>
-      <mat-option value="Created">Created</mat-option>
-      <mat-option value="Rating">Rating</mat-option>
+    <mat-select
+      panelClass="sort-select"
+      [(ngModel)]="sort"
+      (selectionChange)="searchGames(sort)"
+    >
+      <mat-option value="name">Name</mat-option>
+      <mat-option value="-released">Released</mat-option>
+      <mat-option value="-added">Added</mat-option>
+      <mat-option value="-created">Created</mat-option>
+      <mat-option value="-rating">Rating</mat-option>
     </mat-select>
   </mat-form-field>
 </div>
