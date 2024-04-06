@@ -16,9 +16,10 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { HttpHeadersInterceptors } from './interceptors/http-headers.interceptors';
 import { HttpErrorsInterceptors } from './interceptors/http-errors.interceptors';
+import { DetailsComponent } from './components/details/details.component';
 
 @NgModule({
-  declarations: [AppComponent, SearchBarComponent, HomePageComponent],
+  declarations: [AppComponent, SearchBarComponent, HomePageComponent, DetailsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
